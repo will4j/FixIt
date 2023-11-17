@@ -222,6 +222,9 @@ enableEmoji = true
     icp = ""
     # license info (HTML format is supported)
     license = ""
+    # show uv & pv if params.ibruce.enable = true
+    [params.footer.visitor]
+      enable = false
     # FixIt 0.2.17 | CHANGED Site creation time
     [params.footer.siteTime]
       enable = false

@@ -61,7 +61,7 @@
       {{- end -}}
 
       {{- /* 不蒜子 */ -}}
-      {{- if eq .Site.Params.ibruce.enable true -}}
+      {{- if .Site.Params.ibruce.enable | and .Site.Params.footer.visitor.enable -}}
         {{- $loading := dict "Class" "fa-solid fa-spinner fa-spin fa-fw" | partial "plugin/icon.html" -}}
         <div class="footer-line visitor{{ with .Site.Params.footer.order.visitor }} order-{{ . }}{{ end }}">
           <span id="busuanzi_container_site_uv" title='{{ T "footer.siteUV" }}'>
